@@ -1,0 +1,148 @@
+.min-h-screen{
+    min-height: 100vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+ 
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 15px;
+    animation: fadeIn 1s ease;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    animation: slideIn 0.8s ease;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.font-blod{
+    font-weight: bolder;
+    animation: pulse 2s infinite;
+}
+
+.my-1{
+    margin-top: clamp(8px, 2vw, 13px);
+    margin-bottom: clamp(8px, 2vw, 13px);
+}
+
+.my-2{
+    margin-top: clamp(16px, 3vw, 26px);
+    margin-bottom: clamp(16px, 3vw, 26px);
+}
+
+.px-2{
+    padding-left: clamp(8px, 2vw, 13px);
+    padding-right: clamp(8px, 2vw, 13px);
+}
+
+.text-blue{
+    color: rgb(227, 74, 56);
+    animation: colorPulse 2s infinite;
+}
+
+.btn{
+    padding: clamp(5px, 1.5vw, 7px) clamp(8px, 2vw, 12px);
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(227, 74, 56);
+    font-size: clamp(14px, 2vw, 16px);
+    transition: all 0.3s ease;
+    animation: bounce 1s infinite;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorPulse {
+    0% {
+        color: rgb(227, 74, 56);
+    }
+    50% {
+        color: rgb(180, 50, 35);
+    }
+    100% {
+        color: rgb(227, 74, 56);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+    
+    .justify-between {
+        gap: 1rem;
+    }
+}
