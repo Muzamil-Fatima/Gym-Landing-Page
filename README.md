@@ -52,17 +52,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 > 💡 Created with ❤️ by **Muzamil Fatima** – aspiring web developer.
-
-````
-
----
-
-### 📤 To upload it:
-
-1. In your VS Code project folder, create a file named `README.md`.
-2. Paste the content above.
-3. Then run:
-   ```bash
-   git add README.md
-   git commit -m "Added professional README with features and structure"
-   git push origin main
